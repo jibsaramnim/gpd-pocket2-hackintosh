@@ -3,6 +3,8 @@ Clover configuration and required/related Kexts to run macOS on your GPD Pocket 
 
 Special thanks go out to [Tonymacx86 user fnanao](https://www.tonymacx86.com/threads/gpd-pocket-2-battery-status.279659/), who kindly shared their EFI folder and configuration files that helped us get to working hardware acceleration, something that had stumped me personally in the ~6 or so months I off-and-on tried to make it work.
 
+![macOS Mojave 10.14.5 running on the GPD Pocket 2 m3-8100y](/GPD Pocket 2 Hack.png?raw=true)
+
 ## Requirements
 
 - A GPD Pocket 2 (I have tested this with an m3-8100Y. Please let me know if it works with the Celeron 3965Y or m3-7y30!)
