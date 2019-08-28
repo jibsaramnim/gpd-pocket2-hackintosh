@@ -3,6 +3,12 @@ Clover configuration and required/related Kexts to run macOS on your GPD Pocket 
 
 Special thanks go out to [Tonymacx86 user fnanao](https://www.tonymacx86.com/threads/gpd-pocket-2-battery-status.279659/), who kindly shared their EFI folder and configuration files that helped us get to working hardware acceleration, something that had stumped me personally in the ~6 or so months I off-and-on tried to make it work.
 
+## One Mix Devices
+
+[Balopez83](https://github.com/balopez83/) has been working on getting macOS to work on their One Mix 3, with potential support for the 2s as-well. Please head on over to their repository if you're looking for One Mix support:
+   https://github.com/balopez83/One-Mix-3-Hackintosh
+  
+
 ![macOS Mojave 10.14.5 running on the GPD Pocket 2 m3-8100y](images/screenshot_m3-8100y.png?raw=true)
 
 ## Requirements
@@ -61,20 +67,20 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 - Built-in speakers
 - Bluetooth
 - Battery reading and charging recognition
-- Both USB-A and the USB-C port (I have tested a USB-C hub, but have not yet tested HDMI out)
+- Both USB-A ports as-well as the USB-C port
 - Built-in microSD card reader
 - CPU Temperature and voltage/wattage reading (Confirmed with iStat Menus)
 
 ## What's not yet working
 
-- Sleep mode
+- Sleep mode (likely related to display brightness configuration, wip)
 - Microphone
 
 ## What will never* work
 - Touch Screen
 - eMMC built-in storage. You can only use an external USB drive/stick or microSD card to run macOS.
 
-_* Not unless someone decides to make custom drivers for these, of course :D_
+_* Not unless someone decides to make custom kexts for these, of course._
 
 ## Notes:
 You can use the "right orientation" to have Clover boot in proper landscape orientation, but be aware that if you want to access Clover's boot options (e.g. enabling verbose mode, disabling loading of certain kexts, etc.) this will cause graphical issues to the point where you cannot actually read the names of these options. For this to work you must change the screen orientation in BIOS back to the screen's default mode. This is not an issue for normal usage, however, only when debugging for example, but I wanted to mention it here just in case.
