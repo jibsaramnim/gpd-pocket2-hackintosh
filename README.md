@@ -3,11 +3,13 @@ Clover configuration and required/related Kexts to run macOS on your GPD Pocket 
 
 Special thanks go out to [Tonymacx86 user fnanao](https://www.tonymacx86.com/threads/gpd-pocket-2-battery-status.279659/), who kindly shared their EFI folder and configuration files that helped us get to working hardware acceleration, something that had stumped me personally in the ~6 or so months I off-and-on tried to make it work.
 
-## One Mix Devices
+#### Note for One Mix Devices
 
-[Balopez83](https://github.com/balopez83/) has been working on getting macOS to work on their One Mix 3, with potential support for the 2s as-well. Please head on over to their repository if you're looking for One Mix support:
-   https://github.com/balopez83/One-Mix-3-Hackintosh
+Balopez83 has been working on getting macOS to work on their One Mix 3, with potential support for the 2s as-well. Please head on over to their repository if you're looking for One Mix support:
+
+- https://github.com/balopez83/One-Mix-3-Hackintosh
   
+## Screenshot
 
 ![macOS Mojave 10.14.5 running on the GPD Pocket 2 m3-8100y](images/screenshot_m3-8100y.png?raw=true)
 
