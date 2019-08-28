@@ -169,6 +169,76 @@
 					SU1FSQ==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC1 to EH01</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC2 to EH02</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHCI to XHC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					WEhDSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEhDXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHC1 to XHC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					WEhDMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEhDXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename H_EC to EC__</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					SF9FQw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -242,7 +312,7 @@
 				<key>PStates</key>
 				<false/>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 	</dict>
@@ -257,7 +327,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>nv_disable=1 -wegnoegpu slide=0</string>
+		<string>nv_disable=1 -wegnoegpu slide=0 darkwake=0</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -647,15 +717,15 @@
 			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
-		<true/>
+		<false/>
 		<key>SetIntelMaxBacklight</key>
-		<true/>
+		<false/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
 			<false/>
 			<key>FixOwnership</key>
-			<false/>
+			<true/>
 			<key>HighCurrent</key>
 			<false/>
 		</dict>
@@ -795,8 +865,10 @@
 		<string>en:0</string>
 		<key>PlayAsync</key>
 		<false/>
+		<key>Scan</key>
+		<true/>
 		<key>ScreenResolution</key>
-		<string>1920x1080</string>
+		<string>1920x1200</string>
 		<key>ShowOptimus</key>
 		<false/>
 		<key>Theme</key>
