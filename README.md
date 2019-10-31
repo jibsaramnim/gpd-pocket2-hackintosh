@@ -2,20 +2,21 @@
 Clover configuration and required/related Kexts to run macOS on your GPD Pocket 2. At long last, we've got it!
 
 Special thanks go out to [Tonymacx86 user fnanao](https://www.tonymacx86.com/threads/gpd-pocket-2-battery-status.279659/), who kindly shared their EFI folder and configuration files that helped us get to working hardware acceleration, something that had stumped me personally in the ~6 or so months I off-and-on tried to make it work.
-
-#### Note for One Mix Devices
-
-Balopez83 has been working on getting macOS to work on their One Mix 3, with potential support for the 2s as-well. Please head on over to their repository if you're looking for One Mix support:
-
-- https://github.com/balopez83/One-Mix-3-Hackintosh
   
 ## Screenshot
 
 ![macOS Mojave 10.14.5 running on the GPD Pocket 2 m3-8100y](images/screenshot_m3-8100y.png?raw=true)
 
+## Compatibility
+
+ - **GPD Pocket 2 m3-8100Y**: The main model this configuration was developed with and for.
+ - **GPD Pocket 2 m3-7y30**: [Reported as working](https://github.com/hellodeibu/gpd-pocket2-hackintosh/issues/40).
+ - **GPD Pocket 2 Celeron 3965Y**: Unconfirmed. Please let us know if it works, Consider submitting a pull request with this model's specific fixes if you have them. Thank you!
+ - **One Mix 3 & 2S**: Yes. [Please check out Balopez83's separate repository](https://github.com/balopez83/One-Mix-3-Hackintosh).
+
 ## Requirements
 
-- A GPD Pocket 2 (I have tested this with an m3-8100Y. Please let me know if it works with the Celeron 3965Y or m3-7y30!)
+- A GPD Pocket 2
 - A USB stick, drive or microSD card to install macOS on (minimum 32GB)
 - A USB stick, drive or microSD card to install macOS from (if you're installing macOS, if you're cloning from an existing installation this is not required)
 
