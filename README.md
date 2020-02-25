@@ -80,7 +80,7 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 - Microphone
 
 ## What will never* work
-- Touch Screen
+- Touch Screen **Update:** Never say never! @lazd has [written a touch screen driver that needs testing](https://github.com/hellodeibu/gpd-pocket2-hackintosh/issues/8). Please let us know if it works for you!
 - eMMC built-in storage. You can only use an external USB drive/stick or microSD card to run macOS.
 
 _* Not unless someone decides to make custom kexts for these, of course._
