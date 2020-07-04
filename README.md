@@ -85,7 +85,7 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 - Built-in microSD card reader
 - CPU Temperature and voltage/wattage reading (Confirmed with iStat Menus)
 - TouchScreen / Stylus ( double click doesnt work and non-functional on mojave )
-- Internal Wi-Fi ( use the heliport app to join networks just like the built in wireless and use the instructions here to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
+- Internal Wi-Fi ( use the heliport app to join networks just like the built in wireless and use the instructions [here](https://support.apple.com/guide/mac-help/open-items-automatically-when-you-log-in-mh15189/mac) to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
 
 ## What's not yet working
 
