@@ -48,7 +48,7 @@ Required Kexts to be able to run macOS on your GPD Pocket 2 are included in this
 A few required or otherwise useful steps to take on a running macOS system on your GPD Pocket 2:
 
 ## Changing the display orientation
-To correct the display orientation within macOS, press and hold down `cmd+opt` (`Windows+alt`) and open `System Preferences`. Keep holding down those two buttons and click on `Displays`. The screen orientation option will now appear even for the built-in display. Set it to `270 degrees` for the correct orientation. Alternatively...just download the Display Rotation Menu app and set the view to portrait flipped
+To correct the display orientation within macOS, press and hold down `cmd+opt` (`Windows+alt`) and open `System Preferences`. Keep holding down those two buttons and click on `Displays`. The screen orientation option will now appear even for the built-in display. Set it to `270 degrees` for the correct orientation. Alternatively...just download the [Display Rotation Menu](https://www.magesw.com/displayrotation/) app and set the view to portrait flipped
 
 ### Enabling HiDPI mode
 I recommend running the following command post-installation to enable HiDPI mode (thanks to fnanao for this tip), as the default resolution of 1920x1200 makes everything quite small:
@@ -65,7 +65,7 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 `cat /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist`
 
 ## Setting resolutions over 1080p
-1. load clover and slect run shell 
+1. load clover and select shell 
 2. enter the command "setup_var_3 0x83F 0x2" (without the quotations) hit enter then type exit
 3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
 
