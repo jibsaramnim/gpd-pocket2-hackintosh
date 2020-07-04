@@ -10,7 +10,7 @@ Special thanks go out to [Tonymacx86 user fnanao](https://www.tonymacx86.com/thr
 ## Compatibility
 
  - **GPD Pocket 2 m3-8100Y**: The main model this configuration was developed with and for.
- - **GPD Pocket 2 m3-7y30**: [Reported as working](https://github.com/hellodeibu/gpd-pocket2-hackintosh/issues/40).
+ - **GPD Pocket 2 m3-7y30**: [Reported as working but requires confirmation](https://github.com/hellodeibu/gpd-pocket2-hackintosh/issues/40).
  - **GPD Pocket 2 Celeron 3965Y**: Unconfirmed. Please let us know if it works, Consider submitting a pull request with this model's specific fixes if you have them. Thank you!
  - **One Mix 3 & 2S**: Yes. [Please check out Balopez83's separate repository](https://github.com/balopez83/One-Mix-3-Hackintosh).
 
@@ -28,9 +28,9 @@ Under `SMBIOS` click `Generate New` to generate a new serial number. Copy the en
 ## What's included
 Required Kexts to be able to run macOS on your GPD Pocket 2 are included in this repo already. You might want to check to see if there are newer versions available, or just go ahead with what's here and start this way.
 
-- [Lilu](https://github.com/acidanthera/Lilu) v1.3.7
-- [WhateverGreen](https://github.com/acidanthera/WhateverGreen) v1.3.0
-- [AppleALC](https://github.com/acidanthera/AppleALC) v1.3.9
+- [Lilu](https://github.com/acidanthera/Lilu) v1.4.5
+- [WhateverGreen](https://github.com/acidanthera/WhateverGreen) v1.4.0
+- [AppleALC](https://github.com/acidanthera/AppleALC) v1.5.0
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC) v1.0.6
   - SMCProcessor v1.0.6
   - SMCBatteryManager v1.0
@@ -42,13 +42,13 @@ Required Kexts to be able to run macOS on your GPD Pocket 2 are included in this
 - [CPUFriend](https://github.com/acidanthera/CPUFriend) v1.1.8
 - [CodecCommander](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/) v2.7.1
 - [NullEthernet](https://bitbucket.org/RehabMan/os-x-null-ethernet/downloads/) v1.0.6
-- Display-756e6b6-717 (Custom)
+- [VoodooI2CGoodix](https://github.com/lazd/VoodooI2CGoodix) v0.3.1
 
 ## Post-installation tweaks
 A few required or otherwise useful steps to take on a running macOS system on your GPD Pocket 2:
 
 ## Changing the display orientation
-To correct the display orientation within macOS, press and hold down `cmd+opt` (`Windows+alt`) and open `System Preferences`. Keep holding down those two buttons and click on `Displays`. The screen orientation option will now appear even for the built-in display. Set it to `270 degrees` for the correct orientation.
+To correct the display orientation within macOS, press and hold down `cmd+opt` (`Windows+alt`) and open `System Preferences`. Keep holding down those two buttons and click on `Displays`. The screen orientation option will now appear even for the built-in display. Set it to `270 degrees` for the correct orientation. Alternatively...just download the Display Rotation Menu app and set the view to portrait flipped
 
 ### Enabling HiDPI mode
 I recommend running the following command post-installation to enable HiDPI mode (thanks to fnanao for this tip), as the default resolution of 1920x1200 makes everything quite small:
@@ -64,15 +64,28 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 
 `cat /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist`
 
+## Setting resolutions over 1080p
+1. load clover and slect run shell 
+2. enter the command "setup_var_3 0x83F 0x2" (without the quotations) hit enter then type exit
+3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
+
+### Additional drivers
+
+[Wifi dongle driver](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
+
+[Wifi dongle driver(older adapters)](https://github.com/chris1111/Wireless-Ralink-Panel-Utility)
+
 ## What Works
 
 - Full hardware acceleration
-- Built-in speakers
+- Audio (for the time bring you must choose between built-in OR external speakers...internal is fine as-is but you must delete voodoohda.kext for external sound to work) 
 - Bluetooth
 - Battery reading and charging recognition
 - Both USB-A ports as-well as the USB-C port
 - Built-in microSD card reader
 - CPU Temperature and voltage/wattage reading (Confirmed with iStat Menus)
+- TouchScreen / Stylus ( double click doesnt work and non-functional on mojave )
+- Internal Wi-Fi ( use the heliport app to join networks just like the built in wireless and use the instructions here to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
 
 ## What's not yet working
 
@@ -80,7 +93,6 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 - Microphone
 
 ## What will never* work
-- Touch Screen **Update:** Never say never! @lazd has [written a touch screen driver that needs testing](https://github.com/hellodeibu/gpd-pocket2-hackintosh/issues/8). Please let us know if it works for you!
 - eMMC built-in storage. You can only use an external USB drive/stick or microSD card to run macOS.
 
 _* Not unless someone decides to make custom kexts for these, of course._
