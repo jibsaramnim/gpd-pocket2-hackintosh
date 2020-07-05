@@ -79,7 +79,7 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 ## What Works
 
 - Full hardware acceleration
-- Audio (for the time bring you must choose between built-in OR external speakers...internal is fine as-is but you must delete voodoohda.kext for external sound to work) 
+- Audio (for the time being you must choose between built-in OR external speakers...internal is fine as-is but you must delete voodoohda.kext for external sound to work) 
 - Bluetooth
 - Battery reading and charging recognition
 - Both USB-A ports as-well as the USB-C port
