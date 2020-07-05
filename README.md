@@ -43,6 +43,7 @@ Required Kexts to be able to run macOS on your GPD Pocket 2 are included in this
 - [CodecCommander](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/) v2.7.1
 - [NullEthernet](https://bitbucket.org/RehabMan/os-x-null-ethernet/downloads/) v1.0.6
 - [VoodooI2CGoodix](https://github.com/lazd/VoodooI2CGoodix) v0.3.1
+- [itlwm](https://github.com/zxystd/itlwm) v1.0
 
 ## Post-installation tweaks
 A few required or otherwise useful steps to take on a running macOS system on your GPD Pocket 2:
