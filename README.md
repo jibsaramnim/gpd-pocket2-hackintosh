@@ -37,7 +37,7 @@ Required Kexts to be able to run macOS on your GPD Pocket 2 are included in this
   - SMCSuperIO v1.0.6
 - [USBInjectAll](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads) v0.7.1
 - [VoodooHDA](https://sourceforge.net/projects/voodoohda/) v2.9.2
-- [VoodooI2C](https://github.com/alexandred/VoodooI2C) v2.2
+- [VoodooI2C](https://github.com/alexandred/VoodooI2C) v2.3
 - [VoodooPS2Controller](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/) v1.8.28
 - [CPUFriend](https://github.com/acidanthera/CPUFriend) v1.1.8
 - [CodecCommander](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/) v2.7.1
@@ -84,7 +84,7 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 - Both USB-A ports as-well as the USB-C port
 - Built-in microSD card reader
 - CPU Temperature and voltage/wattage reading (Confirmed with iStat Menus)
-- TouchScreen / Stylus ( double click doesnt work and non-functional on mojave )
+- TouchScreen ( double click doesnt work and non-functional on mojave )
 - Internal Wi-Fi ( use the heliport app to join networks just like the built in wireless and use the instructions [here](https://support.apple.com/guide/mac-help/open-items-automatically-when-you-log-in-mh15189/mac) to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
 
 ## What's not yet working
