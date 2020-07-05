@@ -31,10 +31,10 @@ Required Kexts to be able to run macOS on your GPD Pocket 2 are included in this
 - [Lilu](https://github.com/acidanthera/Lilu) v1.4.5
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen) v1.4.0
 - [AppleALC](https://github.com/acidanthera/AppleALC) v1.5.0
-- [VirtualSMC](https://github.com/acidanthera/VirtualSMC) v1.0.6
-  - SMCProcessor v1.0.6
-  - SMCBatteryManager v1.0
-  - SMCSuperIO v1.0.6
+- [VirtualSMC](https://github.com/acidanthera/VirtualSMC) v1.1.4
+  - SMCProcessor v1.1.4
+  - SMCBatteryManager v1.1.4
+  - SMCSuperIO v1.1.4
 - [USBInjectAll](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads) v0.7.1
 - [VoodooHDA](https://sourceforge.net/projects/voodoohda/) v2.9.2
 - [VoodooI2C](https://github.com/alexandred/VoodooI2C) v2.3
