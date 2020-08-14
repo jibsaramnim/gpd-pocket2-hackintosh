@@ -10,7 +10,7 @@ Special thanks go out to [Tonymacx86 user fnanao](https://www.tonymacx86.com/thr
 ## Compatibility
 
  - **GPD Pocket 2 m3-8100Y**: The main model this configuration was developed with and for.
- - **GPD Pocket 2 m3-7y30**: [Reported as working but requires confirmation](https://github.com/hellodeibu/gpd-pocket2-hackintosh/issues/40).
+ - **GPD Pocket 2 m3-7y30**: [Reported as working](https://github.com/hellodeibu/gpd-pocket2-hackintosh/issues/40).
  - **GPD Pocket 2 Celeron 3965Y**: Unconfirmed. Please let us know if it works, Consider submitting a pull request with this model's specific fixes if you have them. Thank you!
  - **One Mix 3 & 2S**: Yes. [Please check out Balopez83's separate repository](https://github.com/balopez83/One-Mix-3-Hackintosh).
 
@@ -21,7 +21,12 @@ Special thanks go out to [Tonymacx86 user fnanao](https://www.tonymacx86.com/thr
 - A USB stick, drive or microSD card to install macOS from (if you're installing macOS, if you're cloning from an existing installation this is not required)
 
 ## Quick Start Guide:
-Format a USB drive/stick or microSD card as APFS. Download [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/), mount EFI partition of newly created drive/stick, place EFI folder from this repository in there. Open `config.plist` with Clover Configurator.
+##  Basic Usage
+
+1. Create a bootable Mojave or Catalina bootable USB using this [tutorial](https://internet-install.gitbook.io/macos-internet-install/) OR this [tutorial](https://www.olarila.com/topic/6278-new-vanilla-olarila-images/)(arguably easier) but use my CLOVER folder at the point where you should configure CLOVER bootloader
+2. Boot from this usb then install Mojave/Catalina on a free partition of your drive ( please note...must be installed to usb stick, external hard drive or micro sd as macos does not detect emmc )
+
+Download [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/), mount EFI partition of newly created drive/stick, place EFI folder from this repository in there. Open `config.plist` with Clover Configurator.
 
 Under `SMBIOS` click `Generate New` to generate a new serial number. Copy the entire serial number and in the `Board Serial Number` paste it whilst leaving the last five characters of whatever number is already there in place, so that the board serial number ends up looking like `{serial number}{five more characters}`. Then go to `System Parameters` and click `Generate New` to create a new UUID too. While you're there, ensure `Inject Kexts` is still set to `Detect`. Save the config file, and you're set. Either use this EFI on a macOS Mojave installer USB stick or for an already installed system, both should work.
 
