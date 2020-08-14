@@ -66,7 +66,7 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 `cat /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist`
 
 ## Setting resolutions over 1080p
-1. load clover and select shell 
+1. load clover and select "start uei shell 64"
 2. enter the command "setup_var_3 0x83F 0x2" (without the quotations) hit enter then type exit
 3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
 
@@ -75,6 +75,8 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 [Wifi dongle driver](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
 
 [Wifi dongle driver(older adapters)](https://github.com/chris1111/Wireless-Ralink-Panel-Utility)
+
+[Latest AutoBuild of Intel WiFi Driver & HeliPort App](https://github.com/1hbb/OpenIntelWireless-Factory/releases)
 
 ## What Works
 
