@@ -21,7 +21,6 @@ Special thanks go out to [Tonymacx86 user fnanao](https://www.tonymacx86.com/thr
 - A USB stick, drive or microSD card to install macOS from (if you're installing macOS, if you're cloning from an existing installation this is not required)
 
 ## Quick Start Guide:
-##  Basic Usage
 
 1. Create a bootable Mojave or Catalina bootable USB using this [tutorial](https://internet-install.gitbook.io/macos-internet-install/) OR this [tutorial](https://www.olarila.com/topic/6278-new-vanilla-olarila-images/)(arguably easier) but use my CLOVER folder at the point where you should configure CLOVER bootloader
 2. Boot from this usb then install Mojave/Catalina on a free partition of your drive ( please note...must be installed to usb stick, external hard drive or micro sd as macos does not detect emmc )
