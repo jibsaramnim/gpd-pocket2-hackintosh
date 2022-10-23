@@ -1,18 +1,20 @@
-# GPD Pocket 2 Hackintosh configuration 
+## PLEASE CLEAN NVRAM(press spacebar on opencore select screen then choose option and reboot) AFTER REPLACING EFI BUT BEFORE FIRST BOOT!
+
+# GPD Pocket 2 Hackintosh configuration           
 Clover configuration and required/related Kexts to run macOS on your GPD Pocket 2. At long last, we've got it!
 
 Special thanks go out to [Tonymacx86 user fnanao](https://www.tonymacx86.com/threads/gpd-pocket-2-battery-status.279659/), who kindly shared their EFI folder and configuration files that helped us get to working hardware acceleration, something that had stumped me personally in the ~6 or so months I off-and-on tried to make it work.
   
 ## Screenshot
 
-![macOS Mojave 10.14.5 running on the GPD Pocket 2 m3-8100y](images/screenshot_m3-8100y.png?raw=true)
+![macOS Monterey 12.6 running on the GPD Pocket 2 m3-8100y](images/screenshot_m3-8100y.png?raw=true)
 
 ## Compatibility
 
  - **GPD Pocket 2 m3-8100Y**: The main model this configuration was developed with and for.
- - **GPD Pocket 2 m3-7y30**: [Reported as working](https://github.com/hellodeibu/gpd-pocket2-hackintosh/issues/40).
+ - **GPD Pocket 2 m3-7y30**: [Reported as working with clover...may need changes to config](https://github.com/hellodeibu/gpd-pocket2-hackintosh/issues/40).
  - **GPD Pocket 2 Celeron 3965Y**: Unconfirmed. Please let us know if it works, Consider submitting a pull request with this model's specific fixes if you have them. Thank you!
- - **One Mix 3 & 2S**: Yes. [Please check out Balopez83's separate repository](https://github.com/balopez83/One-Mix-3-Hackintosh).
+ - **One Mix 3 & 2S**: Yes. [Please check out THEDEVIOUS1's separate repository](https://github.com/THEDEVIOUS1/ONE_MIX_YOGA_3_PRO_HACKINTOSH).
 
 ## Requirements
 
@@ -53,7 +55,7 @@ Required Kexts to be able to run macOS on your GPD Pocket 2 are included in this
 A few required or otherwise useful steps to take on a running macOS system on your GPD Pocket 2:
 
 ## Changing the display orientation
-To correct the display orientation within macOS, press and hold down `cmd+opt` (`Windows+alt`) and open `System Preferences`. Keep holding down those two buttons and click on `Displays`. The screen orientation option will now appear even for the built-in display. Set it to `270 degrees` for the correct orientation. Alternatively...just download the [Display Rotation Menu](https://www.magesw.com/displayrotation/) app and set the view to portrait flipped
+To correct the display orientation within macOS, press and hold down `cmd+opt` (`Windows+alt`) and open `System Preferences`. Keep holding down those two buttons and click on `Displays`(may not work with monterey). The screen orientation option will now appear even for the built-in display. Set it to `270 degrees` for the correct orientation. Alternatively...just download the [Display Rotation Menu](https://www.magesw.com/displayrotation/) app and set the view to portrait flipped
 
 ### Enabling HiDPI mode
 I recommend running the following command post-installation to enable HiDPI mode (thanks to fnanao for this tip), as the default resolution of 1920x1200 makes everything quite small:
@@ -69,10 +71,10 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 
 `cat /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist`
 
-## Setting resolutions over 1080p
-1. load clover and select "start uei shell 64"
+## Setting resolutions over 1080p (PLEASE CONTACT ME BEFORE ATTEMPTING THIS...POSSIBLE BRICK RISK!)
+1. load opencore, press spacbar and select "shell64.efi"
 2. enter the command "setup_var_3 0x83F 0x2" (without the quotations) hit enter then type exit
-3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
+3. either delete config.plist and rename config4k.plist to config.plist OR simply remove the line stolenmem under device properties
 
 ### Additional drivers
 
@@ -85,22 +87,24 @@ Then, reboot your Pocket 2. Once back in macOS, re-open System Preferences, head
 ## What Works
 
 - Full hardware acceleration
-- Audio (for the time being you must choose between built-in OR external speakers...internal is fine as-is but you must delete voodoohda.kext for external sound to work) 
+- Audio
 - Bluetooth
 - Battery reading and charging recognition
 - Both USB-A ports as-well as the USB-C port
 - Built-in microSD card reader
 - CPU Temperature and voltage/wattage reading (Confirmed with iStat Menus)
 - TouchScreen ( double click doesnt work and non-functional on mojave )
-- Internal Wi-Fi ( use the heliport app to join networks just like the built in wireless and use the instructions [here](https://support.apple.com/guide/mac-help/open-items-automatically-when-you-log-in-mh15189/mac) to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
+- Internal Wi-Fi
+- Sleep
+- Video Out including 4k
 
 ## What's not yet working
 
-- Sleep mode (likely related to display brightness configuration, wip)
-- Microphone
+- Microphone (needs testng)
+- Sound/brightness buttons
 
 ## What will never* work
-- eMMC built-in storage. You can only use an external USB drive/stick or microSD card to run macOS.
+- eMMC built-in storage. You can only use an external USB drive/stick or microSD card to run macOS. (not true for newer ssd version)
 
 _* Not unless someone decides to make custom kexts for these, of course._
 
