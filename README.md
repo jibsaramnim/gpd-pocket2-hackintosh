@@ -42,13 +42,13 @@ Required Kexts to be able to run macOS on your GPD Pocket 2 are included in this
   - SMCBatteryManager v1.1.4
   - SMCSuperIO v1.1.4
 - [USBInjectAll](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads) v0.7.1
-- [VoodooHDA](https://sourceforge.net/projects/voodoohda/) v2.9.2
 - [VoodooI2C](https://github.com/alexandred/VoodooI2C) v2.3
+- [VoodooI2CGoodix](https://github.com/lazd/VoodooI2CGoodix) v0.4.0
+- [VoodooHDA](https://sourceforge.net/projects/voodoohda/) v2.9.2
 - [VoodooPS2Controller](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/) v1.8.28
 - [CPUFriend](https://github.com/acidanthera/CPUFriend) v1.1.8
 - [CodecCommander](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/) v2.7.1
 - [NullEthernet](https://bitbucket.org/RehabMan/os-x-null-ethernet/downloads/) v1.0.6
-- [VoodooI2CGoodix](https://github.com/lazd/VoodooI2CGoodix) v0.3.1
 - [itlwm](https://github.com/zxystd/itlwm) v1.0
 
 ## Post-installation tweaks
